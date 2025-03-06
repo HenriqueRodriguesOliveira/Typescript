@@ -1,5 +1,7 @@
-function hello(name) {
-  console.log("Hello World " + name + "!");
-}
+// tipagem dinâmica
+// Dynamically Typed
+let message = "Hello World";
 
-hello("Henrique");
+message = 6;
+
+console.log(typeof message);
