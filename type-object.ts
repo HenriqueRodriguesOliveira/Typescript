@@ -1,8 +1,12 @@
 //type Person = { firstName: string; lastName: string };
 
-interface Person {
+type Person = {
   firstName: string;
   lastName: string;
+};
+
+interface User extends Person {
+  email: string;
 }
 
 function getFullName(person: Person): string {
@@ -10,9 +14,10 @@ function getFullName(person: Person): string {
 }
 
 // Structural type system => Sistema de tipo estrutural
-const person: Person = {
+const person: User = {
   firstName: "Henrique",
   lastName: "Rodrigues",
+  email: "teste@teste.com",
 };
 
 const fullName = getFullName(person);
